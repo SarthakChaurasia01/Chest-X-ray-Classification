@@ -2,8 +2,6 @@
 
 A deep learning project to classify chest X-ray images into three categories: **Normal**, **COVID-19**, and **Pneumonia**, using transfer learning with **MobileNetV2**.
 
-![model-preview](https://user-images.githubusercontent.com/your-image-path/preview.png) <!-- Optional: Replace with actual image link -->
-
 ## 🧠 Overview
 
 This project applies convolutional neural networks (CNNs) and transfer learning on chest X-ray datasets to automatically detect and differentiate between:
