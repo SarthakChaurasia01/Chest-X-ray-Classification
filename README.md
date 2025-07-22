@@ -12,6 +12,7 @@ This project applies convolutional neural networks (CNNs) and transfer learning 
 ---
 
 ## 📁 Dataset
+[https://www.kaggle.com/datasets/prashant268/chest-xray-covid19-pneumonia?select=Data]
 
 The dataset used includes labeled chest X-ray images categorized into:
 - `Normal`
