@@ -22,8 +22,6 @@ Sources:
 - COVID-19 Radiography Dataset (Kaggle)
 - ChestX-ray8 Dataset (NIH)
 
-> Ensure that data is properly cleaned and resized to (224, 224, 3) before training.
-
 ---
 
 ## 🛠️ Tech Stack & Libraries
