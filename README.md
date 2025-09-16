@@ -9,7 +9,7 @@ This project applies convolutional neural networks (CNNs) and transfer learning 
 - COVID-19 infections
 - Pneumonia infections
 
----
+----
 
 ## 📁 Dataset
 [https://www.kaggle.com/datasets/prashant268/chest-xray-covid19-pneumonia?select=Data]
@@ -23,7 +23,7 @@ Sources:
 - COVID-19 Radiography Dataset (Kaggle)
 - ChestX-ray8 Dataset (NIH)
 
----
+----
 
 ## 🛠️ Tech Stack & Libraries
 
@@ -33,7 +33,7 @@ Sources:
 - Matplotlib, Seaborn
 - MobileNetV2 (pretrained on ImageNet)
 
----
+----
 
 ## 🚀 Features
 
@@ -44,7 +44,7 @@ Sources:
 - ✅ Training and validation accuracy/loss visualization
 - ✅ Confusion Matrix and Classification Report
 
----
+----
 
 ## 📊 Results
 
