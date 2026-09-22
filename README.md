@@ -1,54 +1,121 @@
 # Chest X-ray Classification using MobileNetV2
 
-A deep learning project to classify chest X-ray images into three categories: **Normal**, **COVID-19**, and **Pneumonia**, using transfer learning with **MobileNetV2**.
+A deep learning image classification project that classifies chest X-ray images into three categories:
 
-## 🧠 Overview
+- Normal
+- COVID-19
+- Pneumonia
 
-This project applies convolutional neural networks (CNNs) and transfer learning on chest X-ray datasets to automatically detect and differentiate between:
-- Healthy lungs (Normal)
-- COVID-19 infections
-- Pneumonia infections
+The project uses transfer learning with MobileNetV2 pretrained on ImageNet.
 
-----
+## Overview
 
-## 📁 Dataset
-[https://www.kaggle.com/datasets/prashant268/chest-xray-covid19-pneumonia?select=Data]
+Chest X-ray classification is a computer vision problem involving the identification of visual patterns associated with different lung conditions.
 
-The dataset used includes labeled chest X-ray images categorized into:
-- `Normal`
-- `COVID-19`
-- `Pneumonia`
+This project explores the use of convolutional neural networks and transfer learning to classify chest X-ray images into three predefined classes.
 
-Sources:
-- COVID-19 Radiography Dataset (Kaggle)
-- ChestX-ray8 Dataset (NIH)
+The workflow includes:
 
-----
+1. Image preprocessing
+2. Data augmentation
+3. Transfer learning using MobileNetV2
+4. Model training
+5. Fine-tuning
+6. Model evaluation
+7. Confusion matrix and classification report analysis
 
-## 🛠️ Tech Stack & Libraries
+## Dataset
 
-- Python
-- TensorFlow / Keras
-- NumPy, Pandas
-- Matplotlib, Seaborn
-- MobileNetV2 (pretrained on ImageNet)
+The project uses a labeled chest X-ray dataset containing three classes:
 
-----
+- Normal
+- COVID-19
+- Pneumonia
 
-## 🚀 Features
+Dataset source:
 
-- ✅ Image Preprocessing & Augmentation
-- ✅ Transfer Learning with MobileNetV2
-- ✅ Fine-tuning CNN layers
-- ✅ Early stopping & model checkpointing
-- ✅ Training and validation accuracy/loss visualization
-- ✅ Confusion Matrix and Classification Report
+[Insert the exact dataset source used for this project]
 
-----
+### Dataset Distribution
 
-## 📊 Results
+| Class | Images |
+|---|---:|
+| Normal | XX |
+| COVID-19 | XX |
+| Pneumonia | XX |
+| Total | XX |
 
-- Achieved over **96.5%** accuracy on the validation set.
-- High precision & recall in COVID-19 class detection.
-- Visualized training curves and confusion matrix.
+## Methodology
 
+### Preprocessing
+
+The images were:
+
+- Resized to the required input dimensions
+- Normalized
+- Organized into the three target classes
+
+### Data Augmentation
+
+Training images were augmented to improve model generalization.
+
+The augmentation pipeline included the transformations used in the training notebook.
+
+### Transfer Learning
+
+MobileNetV2 pretrained on ImageNet was used as the base feature extractor.
+
+The classification head was adapted for the three target classes.
+
+### Fine-tuning
+
+Selected layers of the pretrained network were fine-tuned after initial training.
+
+### Training
+
+The model was trained using:
+
+- Optimizer: [actual optimizer]
+- Loss function: [actual loss]
+- Batch size: [actual batch size]
+- Epochs: [actual epochs]
+- Input size: [actual image dimensions]
+
+## Results
+
+The model achieved a validation accuracy of **96.5%** in the reported experiment.
+
+| Metric | Score |
+|---|---:|
+| Validation Accuracy | 96.5% |
+| Precision | XX |
+| Recall | XX |
+| F1 Score | XX |
+
+Additional evaluation includes:
+
+- Confusion matrix
+- Classification report
+- Training and validation curves
+
+## Model Architecture
+
+```text
+Input Image
+     |
+     v
+Image Preprocessing
+     |
+     v
+MobileNetV2
+(pretrained on ImageNet)
+     |
+     v
+Global Average Pooling
+     |
+     v
+Classification Head
+     |
+     v
+3 Output Classes
+Normal / COVID-19 / Pneumonia
