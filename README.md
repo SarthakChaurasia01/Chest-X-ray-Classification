@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/hero.png" alt="Chest X-ray Classification using MobileNetV2" width="100%">
+</p>
+
 # Chest X-ray Classification using MobileNetV2
 
 A deep learning project for classifying chest X-ray images into three categories:
