@@ -1,121 +1,48 @@
 # Chest X-ray Classification using MobileNetV2
 
-A deep learning image classification project that classifies chest X-ray images into three categories:
+A deep learning project for classifying chest X-ray images into three categories:
 
-- Normal
-- COVID-19
-- Pneumonia
+**Normal · COVID-19 · Pneumonia**
 
-The project uses transfer learning with MobileNetV2 pretrained on ImageNet.
+Built using TensorFlow/Keras and MobileNetV2 transfer learning.
+
+<p align="center">
+  <a href="notebook/Chest-X-Ray-Classification.ipynb">
+    <img src="https://img.shields.io/badge/View-Notebook-1f6feb?style=for-the-badge" alt="View Notebook">
+  </a>
+  <a href="https://www.kaggle.com/datasets/prashant268/chest-xray-covid19-pneumonia">
+    <img src="https://img.shields.io/badge/Dataset-Kaggle-20beff?style=for-the-badge" alt="Dataset">
+  </a>
+</p>
+
+---
 
 ## Overview
 
-Chest X-ray classification is a computer vision problem involving the identification of visual patterns associated with different lung conditions.
-
-This project explores the use of convolutional neural networks and transfer learning to classify chest X-ray images into three predefined classes.
-
-The workflow includes:
-
-1. Image preprocessing
-2. Data augmentation
-3. Transfer learning using MobileNetV2
-4. Model training
-5. Fine-tuning
-6. Model evaluation
-7. Confusion matrix and classification report analysis
-
-## Dataset
-
-The project uses a labeled chest X-ray dataset containing three classes:
+This project uses transfer learning with **MobileNetV2**, a pretrained convolutional neural network, to classify chest X-ray images into three classes:
 
 - Normal
 - COVID-19
 - Pneumonia
 
-Dataset source:
+The project covers image preprocessing, model training, evaluation, and visual analysis of predictions.
 
-[Insert the exact dataset source used for this project]
-
-### Dataset Distribution
-
-| Class | Images |
-|---|---:|
-| Normal | XX |
-| COVID-19 | XX |
-| Pneumonia | XX |
-| Total | XX |
-
-## Methodology
-
-### Preprocessing
-
-The images were:
-
-- Resized to the required input dimensions
-- Normalized
-- Organized into the three target classes
-
-### Data Augmentation
-
-Training images were augmented to improve model generalization.
-
-The augmentation pipeline included the transformations used in the training notebook.
-
-### Transfer Learning
-
-MobileNetV2 pretrained on ImageNet was used as the base feature extractor.
-
-The classification head was adapted for the three target classes.
-
-### Fine-tuning
-
-Selected layers of the pretrained network were fine-tuned after initial training.
-
-### Training
-
-The model was trained using:
-
-- Optimizer: [actual optimizer]
-- Loss function: [actual loss]
-- Batch size: [actual batch size]
-- Epochs: [actual epochs]
-- Input size: [actual image dimensions]
-
-## Results
-
-The model achieved a validation accuracy of **96.5%** in the reported experiment.
-
-| Metric | Score |
-|---|---:|
-| Validation Accuracy | 96.5% |
-| Precision | XX |
-| Recall | XX |
-| F1 Score | XX |
-
-Additional evaluation includes:
-
-- Confusion matrix
-- Classification report
-- Training and validation curves
+---
 
 ## Model Architecture
 
+The classification pipeline follows:
+
 ```text
-Input Image
-     |
-     v
+Chest X-ray Image
+        ↓
 Image Preprocessing
-     |
-     v
+        ↓
 MobileNetV2
-(pretrained on ImageNet)
-     |
-     v
+(Pretrained on ImageNet)
+        ↓
 Global Average Pooling
-     |
-     v
-Classification Head
-     |
-     v
-3 Output Classes
+        ↓
+Dense Classification Layer
+        ↓
 Normal / COVID-19 / Pneumonia
