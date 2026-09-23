@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <a href="notebook/Chest-X-Ray-Classification.ipynb">View Notebook</a>
+  <a href="notebook/Chest X-Ray Classification.ipynb">View Notebook</a>
   &nbsp;&nbsp;•&nbsp;&nbsp;
   <a href="https://www.kaggle.com/datasets/prashant268/chest-xray-covid19-pneumonia">Dataset</a>
 </p>
